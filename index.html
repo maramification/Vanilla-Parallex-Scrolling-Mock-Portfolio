@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> HANDWRITTEN | VANILLA JAVASCRIPT </title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <section>
+           
+            <img src="moud2.png" id="moud2">
+            <img src="TOOLONE.png" id="TOOLONE">
+             
+        </section>
+        <section>
+            <img src="moud5.png" id="moud5">
+            <img src="moud1.png" id="moud" >
+            <img src="written.png" id="written" style="height: 100%; width: 50%; top: 100px; " >
+           
+           
+             
+        </section>
+        <script type="text/javascript">
+        // let bg=document.getElementById("bg");
+        let TOOLONE=document.getElementById("TOOLONE");
+        let moud2=document.getElementById("moud2");
+        let moud1=document.getElementById("moud");
+        let written=document.getElementById("written");
+
+        window.addEventListener('scroll', function() {
+            var value = window.scrollY;
+            TOOLONE.style.top = value*1.2 +'px';
+            moud2.style.top = value *2 +'px';
+            moud1.style.top= value*0.0001 +'px';
+            moud1.style.left= value*0.2 +'px';
+            written.style.left= value*0.5 +'px';
+            
+
+        })
+        </script>
+    </body>
+</html>
